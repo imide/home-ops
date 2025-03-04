@@ -3,7 +3,7 @@ kind: Secret
 metadata:
   name: sops-age
 stringData:
-  age.agekey: ENC[AES256_GCM,data:JTz050XOl4DFel0yxWJJdV82RRnO2zErv5Bxt6om2ES2Eiw5bQOLi3ATTn+mewuOVBp0j9u2EdjnBQ7/kCNS8oUdiOLuUKWF8H4=,iv:1nhBKPYzxcGvY3pNpo2tHfWCeDrZG0Kh/HQZjUMZhTw=,tag:ipfrhnFybSrq+wXAfqop6w==,type:str]
+  age.agekey: ENC[AES256_GCM,data:iTrNNU4ZDnSxWqu6Glgv9Ib4DLq9A+FeMwyDAc5ZIaCOoSU0kDe5AIx9JiGN7z2lLWYvvcyk7ypa6TlvLSKEfllaI0aMQa48cDM=,iv:U+ngkbpTIaNR0UeyFxYgMykTzn3R5eRArWfPK/rBYmY=,tag:2kbWoYkRm/TXii7wzpX6QA==,type:str]
 sops:
   kms: []
   gcp_kms: []
@@ -13,14 +13,14 @@ sops:
     - recipient: age1me0lt784slwt8kh7dhrur5jmdss80y8z7k6gnu3kukkqzzake35scqmg3c
       enc: |
         -----BEGIN AGE ENCRYPTED FILE-----
-        YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5bTZyYTZvV25TWVZLL1Zj
-        UlFrYTVlR2tEanNkOHJjUW9mdmFyeEQ2dHpnClMwVGlvMmV0TzRSSlhmTkJ0SnB3
-        bk1kS2lHSk9lYXhhaFFQRmN0Y2t0aTAKLS0tIHVTZDFBSC9yNDhiWXFXNm9rZFhr
-        Z0c5NjVwNXY0K2V4a21kZmFMRTVZZk0K15Uje7WCdPidbXgnIeWXgDHZriBJjN2H
-        7NgLdmAKbh5eJX0Spe57mOg25yb4WocHEq4hg3n9zb07LocUBqoinw==
+        YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBZaEZIWkE2VXRtVGgxZW4z
+        Yklua0RBbDBaZllEUzc0QmpjUDFkMU9wYVYwCjh5a1FzUHZrOGVZR1ltV2dCVkRT
+        UWovanJkMkpST1d0M2hLcXpycnVhcFEKLS0tIGZoVFFVSGg0VmVZUXV3YzdFSlRG
+        VW1qUEc1U0NoU2h1WTlxWExLVS9WUVEKGNAoD5fcARhP/oEXCcVZb3Xy2hdJDw+9
+        pUz4YQ69QgGMB7cpR02YFNsN1bOK14Kb24CBvnUIwXbAcF8peMxHcQ==
         -----END AGE ENCRYPTED FILE-----
-  lastmodified: "2025-03-04T03:03:17Z"
-  mac: ENC[AES256_GCM,data:I7cpFaVkyCKKUKFBFLNSoEZPfW5vq9cThIN0GcPlyURyRDDmcguD9+oZiIoiMicXNvrmwW8h5wioJ8QM2FpBPJTQ/nW0ijLXz6cLXjolc1bGZQMAyQLHGUq1m0vVsY1TAPsy/f7q8IGd7StIdTHTOh3sIFBdzYkzrVigQozgvaM=,iv:yWItmPmWk3LxZ9gsVLU9YnO8NzulMiP494MMevtpT98=,tag:528a+dWw0JvELvMnpdfu9Q==,type:str]
+  lastmodified: "2025-03-04T03:11:50Z"
+  mac: ENC[AES256_GCM,data:E1j8XqexVaYtbRrQqjgcdwswCC1g3A0+AtrQ/0h6FFJNzXnGnkm8cHefZBO0/T/neoIzbFBVQ1rhw3pnltnP0YKymQvbyid+7kiOvgZcVsakCWMkBAufqTo5omjf0TmoO6JIFOeu/wg2CT9CrpHf7JljSwp4yEkPduEedFCDdfo=,iv:hnPxIVmBdJ2mTZKehVsxA5wK8OUZdUaHmjZQP4zkDVU=,tag:YJZK5+itlpMRm/mTNgAMmg==,type:str]
   pgp: []
   encrypted_regex: ^(data|stringData)$
   mac_only_encrypted: true
