@@ -25,8 +25,7 @@ cniConfig:
 nodes:
   - hostname: "worenserver-desktop"
     ipAddress: "10.0.0.81"
-    installDiskSelector:
-      serial: "naa.5000c500b1fe780c"
+    installDisk: "/dev/sdc"
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/2d61dd07b20062062ea671b4d01873506103b67c0f7a4c3fb6cf4ee85585dcb8
