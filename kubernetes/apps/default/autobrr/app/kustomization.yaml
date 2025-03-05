@@ -4,12 +4,16 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - ./externalsecret.yaml
-  - ./clusterissuer.yaml
   - ./helmrelease.yaml
   - ./prometheusrule.yaml
 configMapGenerator:
-  - name: cert-manager-values
+  - name: autobrr-loki-rules
     files:
-      - values.yaml=./helm/values.yaml
-configurations:
-  - ./helm/kustomizeconfig.yaml
+      - autobrr.yaml=./lokirule.yaml
+    options:
+      labels:
+        loki_rule: "true"
+generatorOptions:
+  disableNameSuffixHash: true
+  annotations:
+    kustomize.toolkit.fluxcd.io/substitute: disabled
