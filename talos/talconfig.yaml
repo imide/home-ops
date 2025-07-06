@@ -21,7 +21,8 @@ cniConfig:
 nodes:
   - hostname: "main"
     ipAddress: "10.0.0.87"
-    installDisk: "/dev/nvme0n1"
+    installDiskSelector:
+      serial: "S7M3NL0Y417565Y"
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/4b3cd373a192c8469e859b7a0cfbed3ecc3577c4a2d346a37b0aeff9cd17cdb0
