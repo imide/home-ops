@@ -13,6 +13,7 @@
     },
     "yaml.schemaStore.enable": true,
     "yaml.schemas": {
-        "kubernetes": "./kubernetes/**/*.yaml"
+        "kubernetes": "./kubernetes/**/*.yaml",
+        "https://kubernetesjsonschema.dev/v1.18.1-standalone-strict/secret-v1.json": "file:///home/imide/home-ops/kubernetes/apps/external-secrets/onepassword/app/secret.sops.yaml"
     }
 }
