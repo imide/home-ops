@@ -1,5 +1,14 @@
 machine:
   kubelet:
+    extraArgs:
+      - destination: /var/openebs/local
+        type: bind
+        source: /var/openebs/local
+        options:
+          - rbind
+          - rshared
+          - rw
+
     extraConfig:
       serializeImagePulls: false
     nodeIP:
