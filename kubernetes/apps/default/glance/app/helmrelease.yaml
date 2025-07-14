@@ -55,12 +55,15 @@ spec:
 
     route:
       app:
-        hostnames:
-          - glance.${SECRET_DOMAIN}
+        hostnames: ["{{ .Release.Name }}.${SECRET_DOMAIN}"]
         parentRefs:
-          - name: internal
+          - name: external
             namespace: kube-system
             sectionName: https
+        rules:
+          - backendRefs:
+              - identifier: app
+                port: *port
 
     persistence:
       config:
